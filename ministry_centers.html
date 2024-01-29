@@ -459,7 +459,7 @@
 <div class="col-xs-12 text-center">
             
              <h3>  REGISTRATION TEACHERS </h3>
-	    <h3>  MAROODIJEEX REGION</h3>
+	    <h3>  MINISTRY CENTERS</h3>
 	
         </div>
         <div class="col-xs-12 col-md-12">
@@ -471,7 +471,6 @@
 <div class="form-group col-sm-4">
                       <select name="TYPE" id="TeacherType" required class="form-control custom-form-control input-lg">
                       <option value="" selected="" disabled=""   >Teacher Type </option>
-                     <option value="PRIVATE TEACHER">PRIVATE TEACHER</option>
                           <option value="PUBLIC TEACHER">PUBLIC TEACHER</option>
                       </select>
                 </div>
@@ -513,12 +512,11 @@
                       <select name="SYLLABUS" id="TeacherSyllabus" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled=""   >Teacher Syllabus</option>
                       <option value="SOMALILAND">SOMALILAND</option>
-                      <option value="OTHER">OTHER</option>
                      </select>
                 </div>
 
                 <div class="form-group col-sm-4">
-                    <select name="REGION" id="maroodijeex" required class="form-control custom-form-control input-lg ">
+                    <select name="REGION" id="subject" required class="form-control custom-form-control input-lg ">
                     <option value="" selected="" disabled=""  >Teacher Region</option>
                     
                     </select>
@@ -541,18 +539,7 @@
                 <div class="form-group col-sm-4">
                     <select name="STAGE" id="TeacherStage" required class="form-control custom-form-control input-lg ">
                     <option value="" selected="" disabled=""   >Teacher Level </option>
-                    <option value="">KG Level</option>
-                    <option value="">PRI Level</option>
-                    <option value="">PRE Level</option>
-                    <option value="">SEC Level</option>
-                    <option value="">KGPRI Level</option>
-                    <option value="">PRIPRE Level</option>
-                    <option value="">PRESEC Level</option>
-                    <option value="">KGPRIPRE Level</option>
-                    <option value="">PRIPRESEC Level</option>
-                    <option value="">KGPRIPRESEC Level</option>
-                    <option value="">INS Level</option>
-                    <option value="">UNI Level</option>
+                    <option value="">MIN Level</option>
                   
                     </select>
               </div>
@@ -561,8 +548,7 @@
                 <select name="INSTITUTION" id="TeacherInstitution" required class="form-control custom-form-control input-lg ">
                 <option value=""  selected="" disabled=""  >Teacher Institution </option>
                 <option value="">SCHOOL</option>
-                <option value="">INSTITUTE</option>
-                <option value="">UNIVERSITY </option>
+                
                 </select>
           </div>
 
@@ -631,40 +617,7 @@
     <script src="enjs/jquery-2.2.4.js"></script>
     <script src="enjs/bootstrap.js"></script>
     <script src="enjs/script.js"></script>
-    <script>
-         var subjectObject = {
-    "MAROODIJEEX": {
-      "HARGAYSA": ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE","MAXAMED MOOGE"] //8
-    }
-  }
-  window.onload = function() {
-    var subjectSel = document.getElementById("maroodijeex");
-    var topicSel = document.getElementById("topic");
-    var chapterSel = document.getElementById("chapter");
-    for (var x in subjectObject) {
-      subjectSel.options[subjectSel.options.length] = new Option(x, x);
-    }
-    subjectSel.onchange = function() {
-      //empty Chapters- and Topics- dropdowns
-      chapterSel.length = 1;
-      topicSel.length = 1;
-      //display correct values
-      for (var y in subjectObject[this.value]) {
-        topicSel.options[topicSel.options.length] = new Option(y, y);
-      }
-    }
-    topicSel.onchange = function() {
-      //empty Chapters dropdown
-      chapterSel.length = 1;
-      //display correct values
-      var z = subjectObject[subjectSel.value][this.value];
-      for (var i = 0; i < z.length; i++) {
-        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-      }
-    }
-  }
-    </script>
-
+   
 </body>
 
 </html>
