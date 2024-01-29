@@ -885,7 +885,7 @@ height:200px;
     background-color: #FFFACD
   }
 
-  tr{
+  th,td,tr{
     border:4px solid rgb(236, 2, 2);
   }
    
