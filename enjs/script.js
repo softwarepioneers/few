@@ -192,32 +192,5 @@ searchBox.addEventListener('keyup', performSearch);
 // }
 
 
-let data = [{
-  item: 'PRODUCTS',
-  subitems: ['ONLINE PRODUCT', 'OFFLINE PRODUCT']
-},
-{
-  item: 'SERVICES',
-  subitems: ['ONLINE SERVICE', 'OFFLINE SERVICE']
-},
 
-];
-
-
-window.onload = function() {
-var itemSel = document.getElementById("Specialty");
-var subitemSel = document.getElementById("Product");
-
-for (var x in data) {
-  itemSel.options[itemSel.options.length] = new Option(data[x].item, x);
-}
-itemSel.onchange = function() {
-  //empty 
-  subitemSel.length = 1;
-  //display correct values
-  for (var y of data[this.value].subitems) {
-    subitemSel.options[subitemSel.options.length] = new Option(y, y);
-  }
-}
-}
 
