@@ -457,70 +457,73 @@
 <div class="row">
     <div class="container">
 <div class="col-xs-12 text-center">
-            
-              <h3> EMIS </h3>
-             <h3> SYSTEMS</h3> 
-
+    <h3> EMIS </h3>
+    <h3>  SYSTEM</h3>
         </div>
         <div class="col-xs-12 col-md-12">
              <form action="https://formspree.io/f/xjvdnowr"  method="post" id="contact-us" class="form">
+              
                 
                 <div class="form-group col-sm-4">
-                    <input type="text" name="AGENT" id="MinistryAgent" autocomplete="off" placeholder="Ministry Agent " required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+                    <!-- <input type="text" name="NAME" id="MinistryName" autocomplete="off" 
+                        placeholder="Ministry Name " autofocus required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
+                    <input type="text" name="MinistryName" id="MinistryName" autocomplete="off" placeholder="Ministry Name " autofocus required class="form-control custom-form-control input-lg uc-text" >
                 </div>
-        <div class="form-group col-sm-4">
-                      <select name="TYPE" id="MinistryType" required class="form-control custom-form-control input-lg ">
+<div class="form-group col-sm-4">
+                      <select name="MinistryType" id="MinistryType" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >Ministry Type </option>
-                          <option value="ONLINE EMIS">ONLINE EMIS</option>
-                          <option value="OFFLINE EMIS">OFFLINE EMIS</option>
+                     <option value="PRIVATE EMIS">PRIVATE EMIS </option>
+                          <option value="PUBLIC EMIS">PUBLIC EMIS</option>
                       </select>
                 </div>
              
 
-        <div class="form-group col-sm-4">
-                    <input type="text" name="DIRECTOR" id="MinistryDirector" autocomplete="off" placeholder="Ministry Director" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+<div class="form-group col-sm-4">
+    <!-- <input type="text" name="MANAGER" id="MinistryManager" autocomplete="off"
+         placeholder="Ministry Manager" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
+                    <input type="text" name="MinistryManager" id="MinistryManager" autocomplete="off" placeholder="Ministry Manager" required class="form-control custom-form-control input-lg uc-text" >
                 </div>
                 <div class="form-group col-sm-4">
-                    <input type="text" name="MOBILE" id="MinistryMobile" autocomplete="off" placeholder="Ministry Mobile" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="MinistryMobile" id="MinistryMobile" autocomplete="off" placeholder="Ministry Mobile"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 
-        <div class="form-group col-sm-4">
-                    <input type="text" name="PHONE" id="MinistryPhone" autocomplete="off" placeholder="Ministry Phone" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+<div class="form-group col-sm-4">
+                    <input type="text" name="MinistryPhone" id="MinistryPhone" autocomplete="off" placeholder="Ministry Phone"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
-        <div class="form-group col-sm-4">
-                    <input type="text" name="WHATSAPP" id="MinistryWhatsApp" autocomplete="off" placeholder="Ministry WhatsApp" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+<div class="form-group col-sm-4">
+                    <input type="text" name="MinistryWhatsApp" id="MinistryWhatsApp" autocomplete="off" placeholder="Ministry WhatsApp" maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
-        <div class="form-group col-sm-4">
-                    <input type="email"  name="EMAIL" id="MinistryEmail" autocomplete="off" placeholder="Ministry Email " required class="form-control custom-form-control input-lg uc-text">
+<div class="form-group col-sm-4">
+                    <input type="email"  name="MinistryEmail" id="MinistryEmail" autocomplete="off" placeholder="Ministry Email "  required class="form-control custom-form-control input-lg uc-text">
                 </div>
 
 
-       <div class="form-group col-sm-4">
-            <select name="SUBJECT" id="MinistrySubject" required class="form-control custom-form-control input-lg ">
-            <option value="" selected="" disabled="" >Ministry Subject</option>
-            <optgroup label="PRODUCT">
-                <option value="SYSTEM PRODUCT">SYSTEM PRODUCT</option>
-            </optgroup>
-            <optgroup label="SERVICE">
-                <option value="SYSTEM SERVICE">SYSTEM SERVICE</option>
-            </optgroup>
-        
-            
-            </select>
-        </div>
+<div class="form-group col-sm-4">
+    <select name="MinistrySubject" id="MinistrySubject" required class="form-control custom-form-control input-lg ">
+    <option value="" selected="" disabled="" >Ministry Subject</option>
+    <optgroup label="PRODUCT">
+        <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
+     </optgroup>
+     <optgroup label="SERVICE">
+        <option value="SERVICE SYSTEM">SERVICE SYSTEM</option>
+     </optgroup>
+   
+    
+    </select>
+</div>
 
 
 
 <div class="form-group col-sm-4">
-                      <select name="CONTRACT" id="MinistryContract" required class="form-control custom-form-control input-lg ">
+                      <select name="MinistryContract" id="MinistryContract" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >Ministry Contract</option>
-                      <option value="NEW">NEW</option>
-                      <option value="RENEWAL">RENEWAL</option>
+                      <option value="NEW CONTRACT">NEW CONTRACT</option>
+                      <option value="RENEWAL CONTRACT">RENEWAL CONTRACT</option>
                       </select>
 </div>
 
 <div class="form-group col-sm-4">
-                      <select name="SYLLABUS" id="MinistrySyllabus" required class="form-control custom-form-control input-lg ">
+                      <select name="MinistrySyllabus" id="MinistrySyllabus" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >Ministry Syllabus</option>
                       <option value="SOMALILAND">SOMALILAND</option>
                       <option value="OTHER">OTHER</option>
@@ -528,7 +531,7 @@
                 </div>
 
                 <div class="form-group col-sm-4">
-                    <select name="REGION" id="subject" required class="form-control custom-form-control input-lg ">
+                    <select name="REGION" id="Region" required class="form-control custom-form-control input-lg ">
                     <option value="" selected="" disabled="" >Ministry Region</option>
                     
                     </select>
@@ -548,31 +551,49 @@
                     </select>
               </div>
 
-              <div class="form-group col-sm-4">
-                <select name="INSTITUTION" id="TeacherInstitution" required class="form-control custom-form-control input-lg ">
-                <option value=""  selected="" disabled=""  >Teacher Institution </option>
-                <option value="">SCHOOL</option>
-                </select>
+               <!-- 
+                <div class="form-group col-sm-4">
+                 <input type="text" name="SPECIALTY" id="MinistrySpecialty" autocomplete="off" 
+                    placeholder="Ministry Specialty" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> 
+                <input type="text" name="SPECIALTY" id="MinistrySpecialty" autocomplete="off" placeholder="Ministry Specialty" required class="form-control custom-form-control input-lg uc-text" >
+            </div>  
+        -->
+        
+            <div class="form-group col-sm-4">
+                    <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg ">
+                    <option value="" selected="" disabled="" >Ministry Specialty</option>
+                        <option value="PRODUCT">PRODUCT</option>
+                        <option value="SERVICE">SERVICE</option>
+                    </select>
           </div>
 
+          <div class="form-group col-sm-4">
+            <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
+            <option value="" selected="" disabled="" >Ministry Product</option>
+            <optgroup label="PRODUCT">
+                <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
+                <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
+            </optgroup>
+            <optgroup label="SERVICE">
+                <option value="ONLINE SERVICE">ONLINE SERVICE</option>
+                <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
+            </optgroup>
+            </select>
+         </div>
 
-                
-
-
-
-                <div class="form-group col-sm-4">
-                    <select name="PRODUCT" id="MinistryProduct" required class="form-control custom-form-control input-lg ">
+                <!-- <div class="form-group col-sm-4">
+                    <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
                                          <option value="" selected="" disabled="" >Ministry Product</option>
                                          <optgroup label="PRODUCT">
-                                            <option value="ONLINE PRODUCT">ONLINE PRODUCT</option>
-                                            <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
+                                            <option value="ONLINEPRODUCT">ONLINE PRODUCT</option>
+                                            <option value="OFFLINEPRODUCT">OFFLINE PRODUCT</option>
                                          </optgroup>
                                          <optgroup label="SERVICE">
-                                            <option value="ONLINE SERVICE">ONLINE SERVICE</option>
-                                            <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
+                                            <option value="ONLINESERVICE">ONLINE SERVICE</option>
+                                            <option value="OFFLINESERVICE">OFFLINE SERVICE</option>
                                          </optgroup>
                    </select>
-                   </div>
+                   </div> -->
                    
 
 
@@ -583,13 +604,17 @@
                 </div>
                 <div class="form-group col-md-12 text-center ">
                
-                <input type="submit" value="Register Ministry" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main">
+                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main">
                     
                 </div>
+           
             </form>
         </div>
        
+              <p>
+               
 
+              </p>
     
            
         </div>

@@ -463,12 +463,15 @@
         </div>
         <div class="col-xs-12 col-md-12">
              <form action="https://formspree.io/f/xjvdnowr"  method="post" id="contact-us" class="form">
+              
                 
                 <div class="form-group col-sm-4">
-                    <input type="text" name="NAME" id="SchoolName" autocomplete="off" placeholder="School Name " required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+                    <!-- <input type="text" name="NAME" id="SchoolName" autocomplete="off" 
+                        placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
+                    <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" >
                 </div>
 <div class="form-group col-sm-4">
-                      <select name="TYPE" id="SchoolType" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolType" id="SchoolType" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Type </option>
                      <option value="PRIVATE PRIS">PRIVATE PRIS </option>
                           <option value="PUBLIC PRIS">PUBLIC PRIS</option>
@@ -477,25 +480,27 @@
              
 
 <div class="form-group col-sm-4">
-                    <input type="text" name="MANAGER" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)">
+    <!-- <input type="text" name="MANAGER" id="SchoolManager" autocomplete="off"
+         placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
+                    <input type="text" name="SchoolManager" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" >
                 </div>
                 <div class="form-group col-sm-4">
-                    <input type="text" name="MOBILE" id="SchoolMobile" autocomplete="off" placeholder="School Mobile" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolMobile" id="SchoolMobile" autocomplete="off" placeholder="School Mobile"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 
 <div class="form-group col-sm-4">
-                    <input type="text" name="PHONE" id="SchoolPhone" autocomplete="off" placeholder="School Phone" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolPhone" id="SchoolPhone" autocomplete="off" placeholder="School Phone"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 <div class="form-group col-sm-4">
-                    <input type="text" name="WHATSAPP" id="SchoolWhatsApp" autocomplete="off" placeholder="School WhatsApp" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolWhatsApp" id="SchoolWhatsApp" autocomplete="off" placeholder="School WhatsApp" maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 <div class="form-group col-sm-4">
-                    <input type="email"  name="EMAIL" id="SchoolEmail" autocomplete="off" placeholder="School Email " required class="form-control custom-form-control input-lg uc-text">
+                    <input type="email"  name="SchoolEmail" id="SchoolEmail" autocomplete="off" placeholder="School Email "  required class="form-control custom-form-control input-lg uc-text">
                 </div>
 
 
 <div class="form-group col-sm-4">
-    <select name="SUBJECT" id="SchoolSubject" required class="form-control custom-form-control input-lg ">
+    <select name="SchoolSubject" id="SchoolSubject" required class="form-control custom-form-control input-lg ">
     <option value="" selected="" disabled="" >School Subject</option>
     <optgroup label="PRODUCT">
         <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
@@ -511,15 +516,15 @@
 
 
 <div class="form-group col-sm-4">
-                      <select name="CONTRACT" id="SchoolContract" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolContract" id="SchoolContract" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Contract</option>
-                      <option value="NEW">NEW</option>
-                      <option value="RENEWAL">RENEWAL</option>
+                      <option value="NEW CONTRACT">NEW CONTRACT</option>
+                      <option value="RENEWAL CONTRACT">RENEWAL CONTRACT</option>
                       </select>
 </div>
 
 <div class="form-group col-sm-4">
-                      <select name="SYLLABUS" id="SchoolSyllabus" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolSyllabus" id="SchoolSyllabus" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Syllabus</option>
                       <option value="SOMALILAND">SOMALILAND</option>
                       <option value="OTHER">OTHER</option>
@@ -527,7 +532,7 @@
                 </div>
 
                 <div class="form-group col-sm-4">
-                    <select name="REGION" id="subject" required class="form-control custom-form-control input-lg ">
+                    <select name="REGION" id="Region" required class="form-control custom-form-control input-lg ">
                     <option value="" selected="" disabled="" >School Region</option>
                     
                     </select>
@@ -547,27 +552,49 @@
                     </select>
               </div>
 
-              <div class="form-group col-sm-4">
-                <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)">
-            </div>
-
-                
-
-
-
+               <!-- 
                 <div class="form-group col-sm-4">
-                    <select name="PRODUCT" id="SchoolProduct" required class="form-control custom-form-control input-lg ">
+                 <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" 
+                    placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> 
+                <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" >
+            </div>  
+        -->
+        
+            <div class="form-group col-sm-4">
+                    <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg ">
+                    <option value="" selected="" disabled="" >School Specialty</option>
+                        <option value="PRODUCT">PRODUCT</option>
+                        <option value="SERVICE">SERVICE</option>
+                    </select>
+          </div>
+
+          <div class="form-group col-sm-4">
+            <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
+            <option value="" selected="" disabled="" >School Product</option>
+            <optgroup label="PRODUCT">
+                <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
+                <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
+            </optgroup>
+            <optgroup label="SERVICE">
+                <option value="ONLINE SERVICE">ONLINE SERVICE</option>
+                <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
+            </optgroup>
+            </select>
+         </div>
+
+                <!-- <div class="form-group col-sm-4">
+                    <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
                                          <option value="" selected="" disabled="" >School Product</option>
                                          <optgroup label="PRODUCT">
-                                            <option value="ONLINE">ONLINE</option>
-                                            <option value="OFFLINE">OFFLINE</option>
+                                            <option value="ONLINEPRODUCT">ONLINE PRODUCT</option>
+                                            <option value="OFFLINEPRODUCT">OFFLINE PRODUCT</option>
                                          </optgroup>
                                          <optgroup label="SERVICE">
-                                            <option value="ONLINE">ONLINE</option>
-                                            <option value="OFFLINE">OFFLINE</option>
+                                            <option value="ONLINESERVICE">ONLINE SERVICE</option>
+                                            <option value="OFFLINESERVICE">OFFLINE SERVICE</option>
                                          </optgroup>
                    </select>
-                   </div>
+                   </div> -->
                    
 
 
@@ -578,18 +605,21 @@
                 </div>
                 <div class="form-group col-md-12 text-center ">
                
-                <input type="submit" value="Register School" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main">
+                <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main">
                     
                 </div>
+           
             </form>
         </div>
        
+              <p>
+               
 
+              </p>
     
            
         </div>
     </div>
-       
 
 
  
