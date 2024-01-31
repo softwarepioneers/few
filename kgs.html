@@ -552,18 +552,30 @@
                     </select>
               </div>
 
-              <div class="form-group col-sm-4">
-                <!-- <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" 
-                    placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
-                <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" >
-            </div>
-
-                
-
-
-
+               <!-- 
                 <div class="form-group col-sm-4">
-                    <select name="PRODUCT" id="SchoolProduct" required class="form-control custom-form-control input-lg ">
+                 <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" 
+                    placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> 
+                <input type="text" name="SPECIALTY" id="SchoolSpecialty" autocomplete="off" placeholder="School Specialty" required class="form-control custom-form-control input-lg uc-text" >
+            </div>  
+        -->
+        
+            <div class="form-group col-sm-4">
+                <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg ">
+                <option value="" selected="" disabled="" >School Specialty</option>
+                
+                </select>
+          </div>
+
+          <div class="form-group col-sm-4">
+            <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
+            <option value="" selected="" disabled="" >School Specialty</option>
+            
+            </select>
+      </div>
+
+                <!-- <div class="form-group col-sm-4">
+                    <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
                                          <option value="" selected="" disabled="" >School Product</option>
                                          <optgroup label="PRODUCT">
                                             <option value="ONLINEPRODUCT">ONLINE PRODUCT</option>
@@ -574,7 +586,7 @@
                                             <option value="OFFLINESERVICE">OFFLINE SERVICE</option>
                                          </optgroup>
                    </select>
-                   </div>
+                   </div> -->
                    
 
 
