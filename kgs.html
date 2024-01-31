@@ -468,10 +468,10 @@
                 <div class="form-group col-sm-4">
                     <!-- <input type="text" name="NAME" id="SchoolName" autocomplete="off" 
                         placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
-                    <input type="text" name="NAME" id="SchoolName" autocomplete="off" placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" >
+                    <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" >
                 </div>
 <div class="form-group col-sm-4">
-                      <select name="TYPE" id="SchoolType" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolType" id="SchoolType" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Type </option>
                      <option value="PRIVATE KGS">PRIVATE KGS </option>
                           <option value="PUBLIC KGS">PUBLIC KGS</option>
@@ -482,25 +482,25 @@
 <div class="form-group col-sm-4">
     <!-- <input type="text" name="MANAGER" id="SchoolManager" autocomplete="off"
          placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" onkeydown="return /[a-zA-Z]/i.test(event.key)"> -->
-                    <input type="text" name="MANAGER" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" >
+                    <input type="text" name="SchoolManager" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" >
                 </div>
                 <div class="form-group col-sm-4">
-                    <input type="text" name="MOBILE" id="SchoolMobile" autocomplete="off" placeholder="School Mobile"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolMobile" id="SchoolMobile" autocomplete="off" placeholder="School Mobile"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 
 <div class="form-group col-sm-4">
-                    <input type="text" name="PHONE" id="SchoolPhone" autocomplete="off" placeholder="School Phone"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolPhone" id="SchoolPhone" autocomplete="off" placeholder="School Phone"  maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 <div class="form-group col-sm-4">
-                    <input type="text" name="WHATSAPP" id="SchoolWhatsApp" autocomplete="off" placeholder="School WhatsApp" maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" name="SchoolWhatsApp" id="SchoolWhatsApp" autocomplete="off" placeholder="School WhatsApp" maxlength="15" required class="form-control custom-form-control input-lg uc-text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
 <div class="form-group col-sm-4">
-                    <input type="email"  name="EMAIL" id="SchoolEmail" autocomplete="off" placeholder="School Email "  required class="form-control custom-form-control input-lg uc-text">
+                    <input type="email"  name="SchoolEmail" id="SchoolEmail" autocomplete="off" placeholder="School Email "  required class="form-control custom-form-control input-lg uc-text">
                 </div>
 
 
 <div class="form-group col-sm-4">
-    <select name="SUBJECT" id="SchoolSubject" required class="form-control custom-form-control input-lg ">
+    <select name="SchoolSubject" id="SchoolSubject" required class="form-control custom-form-control input-lg ">
     <option value="" selected="" disabled="" >School Subject</option>
     <optgroup label="PRODUCT">
         <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
@@ -516,7 +516,7 @@
 
 
 <div class="form-group col-sm-4">
-                      <select name="CONTRACT" id="SchoolContract" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolContract" id="SchoolContract" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Contract</option>
                       <option value="NEW CONTRACT">NEW CONTRACT</option>
                       <option value="RENEWAL CONTRACT">RENEWAL CONTRACT</option>
@@ -524,7 +524,7 @@
 </div>
 
 <div class="form-group col-sm-4">
-                      <select name="SYLLABUS" id="SchoolSyllabus" required class="form-control custom-form-control input-lg ">
+                      <select name="SchoolSyllabus" id="SchoolSyllabus" required class="form-control custom-form-control input-lg ">
                       <option value="" selected="" disabled="" >School Syllabus</option>
                       <option value="SOMALILAND">SOMALILAND</option>
                       <option value="OTHER">OTHER</option>
@@ -532,7 +532,7 @@
                 </div>
 
                 <div class="form-group col-sm-4">
-                    <select name="REGION" id="subject" required class="form-control custom-form-control input-lg ">
+                    <select name="REGION" id="Region" required class="form-control custom-form-control input-lg ">
                     <option value="" selected="" disabled="" >School Region</option>
                     
                     </select>
@@ -561,18 +561,26 @@
         -->
         
             <div class="form-group col-sm-4">
-                <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg ">
-                <option value="" selected="" disabled="" >School Specialty</option>
-                
-                </select>
+                    <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg ">
+                    <option value="" selected="" disabled="" >School Specialty</option>
+                        <option value="PRODUCT">PRODUCT</option>
+                        <option value="SERVICE">SERVICE</option>
+                    </select>
           </div>
 
           <div class="form-group col-sm-4">
             <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
             <option value="" selected="" disabled="" >School Product</option>
-            
+            <optgroup label="PRODUCT">
+                <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
+                <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
+            </optgroup>
+            <optgroup label="SERVICE">
+                <option value="ONLINE SERVICE">ONLINE SERVICE</option>
+                <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
+            </optgroup>
             </select>
-      </div>
+         </div>
 
                 <!-- <div class="form-group col-sm-4">
                     <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg ">
@@ -655,87 +663,39 @@
     <script src="enjs/jquery-2.2.4.js"></script>
     <script src="enjs/bootstrap.js"></script>
     <script src="enjs/script.js"></script>
+ 
     <script>
-        let data = [{
-  item: 'SCHOOL PRODUCT',
-  subitems: ['ONLINE PRODUCT', 'OFFLINE PRODUCT']
-},
-{
-  item: 'SCHOOL SERVICE',
-  subitems: ['ONLINE SERVICE', 'OFFLINE SERVICE']
-},
+            regions() 
+            //  let data = [{
+            // item: 'SCHOOL PRODUCT',
+            // subitems: ['ONLINE PRODUCT', 'OFFLINE PRODUCT']
+            // },
+            // {
+            // item: 'SCHOOL SERVICE',
+            // subitems: ['ONLINE SERVICE', 'OFFLINE SERVICE']
+            // },
 
-];
-
-
-window.onload = function() {
-var itemSel = document.getElementById("Specialty");
-var subitemSel = document.getElementById("Product");
+            // ];
 
 
-
-for (var x in data) {
-  itemSel.options[itemSel.options.length] = new Option(data[x].item, x);
-}
-itemSel.onchange = function() {
-  //empty 
-  subitemSel.length = 1;
-  //display correct values
-  for (var y of data[this.value].subitems) {
-    subitemSel.options[subitemSel.options.length] = new Option(y, y);
-  }
-}
-}
-
-var subjectObject = {
-    "AWDAL": {
-      "BORAMA": ["SH.AXMED SALAAN", "SH.CUSMAN", "SH.CALI JAWHAR", "SH.MAKAAHIIL"] //4
-      },
-    "MAROODIJEEX": {
-      "HARGAYSA": ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE","MAXAMED MOOGE"] //8
-    },
-    "SAAXIL": {
-      "BARBARA": ["BARBARA", "GODAWAYN", "GODAYAR", "SHEEKH"] //4
-      },
-  
-    "SANAAG": {
-      "CEERIGAABO": ["BADHAN","CEELAFWAYN","CEERIGAABO", "GAR ADAG", "LAASQORAY", "NAHAR"] //6
-      },
-    "SOOL": {
-      "LAASCAANOOD": ["CAYNABO", "LAASCAANOOD", "TALEEX", "XUDUN"] //4
-    },
-    "TOGDHEER": {
-      "BURCO": ["FAARAX OMAAR", "MAXAMED CALI", "MAXAMAD SALEEBAAN", "SH.BASHIIR"] //4
-    }
-  }
-  window.onload = function() {
-    var subjectSel = document.getElementById("subject");
-    var topicSel = document.getElementById("topic");
-    var chapterSel = document.getElementById("chapter");
-    for (var x in subjectObject) {
-      subjectSel.options[subjectSel.options.length] = new Option(x, x);
-    }
-    subjectSel.onchange = function() {
-      //empty Chapters- and Topics- dropdowns
-      chapterSel.length = 1;
-      topicSel.length = 1;
-      //display correct values
-      for (var y in subjectObject[this.value]) {
-        topicSel.options[topicSel.options.length] = new Option(y, y);
-      }
-    }
-    topicSel.onchange = function() {
-      //empty Chapters dropdown
-      chapterSel.length = 1;
-      //display correct values
-      var z = subjectObject[subjectSel.value][this.value];
-      for (var i = 0; i < z.length; i++) {
-        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-      }
-    }
-  }
+            // window.onload = function() {
+            // var itemSel = document.getElementById("Specialty");
+            // var subitemSel = document.getElementById("Product");
 
 
+
+            // for (var x in data) {
+            // itemSel.options[itemSel.options.length] = new Option(data[x].item, x);
+            // }
+            // itemSel.onchange = function() {
+            // //empty 
+            // subitemSel.length = 1;
+            // //display correct values
+            // for (var y of data[this.value].subitems) {
+            //     subitemSel.options[subitemSel.options.length] = new Option(y, y);
+            // }
+            // }
+            // }
     </script>
 
 </body>
